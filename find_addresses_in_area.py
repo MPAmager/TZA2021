@@ -40,5 +40,5 @@ for loc_str, rad in tqdm(points.items()):
     res = get_nearby_places(loc_str, rad)
     places.extend(res)
 
-with open('addresses.json') as f:
+with open('places.json') as f:
     json.dump(places, f)
